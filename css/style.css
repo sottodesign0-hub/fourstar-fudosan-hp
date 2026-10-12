@@ -121,14 +121,14 @@ a:hover { text-decoration: underline; }
 
 /* ナビ（PC）*/
 .nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
-.nav a { color: var(--navy); font-weight: 700; font-size: 15px; }
+.nav a { color: var(--navy); font-weight: 700; font-size: 15px; white-space: nowrap; }
 .nav a:hover { color: var(--blue); text-decoration: none; }
 
 .header-actions { display: flex; align-items: center; gap: 14px; }
 .header-tel { text-align: right; line-height: 1.3; }
 .header-tel .num {
   color: var(--navy); font-weight: 800; font-size: 20px; letter-spacing: .02em;
-  display: flex; align-items: center; gap: 6px;
+  display: flex; align-items: center; gap: 6px; white-space: nowrap;
 }
 .header-tel .cap { color: var(--muted); font-size: 11px; }
 
@@ -450,9 +450,13 @@ a:hover { text-decoration: underline; }
 /* =========================================================================
    スマホ・タブレット対応（画面が狭いときのレイアウト）
    ========================================================================= */
-@media (max-width: 900px) {
-  /* タブレット以下はナビ・電話を隠す（メニューはヘッダー右上のハンバーガーに集約）*/
+/* 横並びナビ＋電話が一列に収まりきらない幅（≤1160px）では、
+   折り返して崩れないよう非表示にし、メニューは右上のハンバーガーに集約する */
+@media (max-width: 1160px) {
   .nav, .header-tel { display: none; }
+}
+
+@media (max-width: 900px) {
   .grid-3, .service-list, .service-cards { grid-template-columns: 1fr 1fr; }
   .reason-row, .message-box, .contact-grid { grid-template-columns: 1fr; gap: 24px; }
   .reason-rows { gap: 48px; }
