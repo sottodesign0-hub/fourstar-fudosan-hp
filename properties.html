@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- =========================================================================
+     フォースター不動産 物件情報ページ（properties.html）
+     -------------------------------------------------------------------------
+     ★物件を追加・削除したいとき：
+       「1件＝1つの <article class="prop-card"> ブロック」です。
+       追加するときは、近い種類のブロックをまるごとコピーして、
+       写真・物件名・価格・スペックの日本語部分を書き換えてください。
+       削除するときは、そのブロックを <article ...> から </article> まで消します。
+       < > の記号（タグ）は消さないようにご注意ください。
+     ========================================================================= -->
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>物件情報｜フォースター不動産（岡山の売り物件・賃貸物件）</title>
+  <meta name="description" content="フォースター不動産の取扱物件情報。岡山市・倉敷市・総社市を中心に、売り物件（土地・中古戸建・マンション）と賃貸物件をご紹介します。気になる物件はお気軽にお問い合わせください。">
+  <!-- ★公開ドメインが決まったら「REPLACE_DOMAIN」を本番URLに一括置換してください -->
+  <link rel="canonical" href="https://REPLACE_DOMAIN/properties.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="フォースター不動産">
+  <meta property="og:title" content="物件情報｜フォースター不動産（岡山の売り物件・賃貸物件）">
+  <meta property="og:description" content="岡山市・倉敷市・総社市を中心とした売り物件・賃貸物件のご紹介。気になる物件はお気軽にお問い合わせください。">
+  <meta property="og:url" content="https://REPLACE_DOMAIN/properties.html">
+  <meta property="og:image" content="https://REPLACE_DOMAIN/images/hero.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ ヘッダー（全ページ共通）============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="フォースター不動産"></a>
+      <nav class="nav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="properties.html">物件情報</a></li>
+          <li><a href="index.html#service">事業内容</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="header-tel">
+          <span class="cap">お電話でのご相談</span>
+          <span class="num">☎ 086-250-5440</span>
+        </div>
+        <a href="contact.html" class="btn btn--primary">無料相談</a>
+        <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ ページ見出し ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="en">PROPERTIES</span>
+      <h1>物件情報</h1>
+    </div>
+  </section>
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> ＞ 物件情報</p>
+  </div>
+
+  <!-- ============ 売り物件 ============ -->
+  <section class="section" id="sale">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">FOR SALE</span>
+        <h2>売り物件</h2>
+        <p>岡山市・倉敷市・総社市を中心に、土地・中古戸建・マンションをご紹介しています。<br>気になる物件は、お気軽にお問い合わせください。</p>
+      </div>
+
+      <!-- 売り／賃貸の切り替えリンク -->
+      <div class="prop-tabs">
+        <a href="#sale" class="is-active">売り物件</a>
+        <a href="#rent">賃貸物件</a>
+      </div>
+
+      <!-- ここから編集（1件＝1つの article.prop-card）-->
+      <div class="prop-grid">
+
+        <article class="prop-card">
+          <div class="prop-photo">
+            <span class="prop-label">中古戸建</span>
+            <!-- ★写真を入れるとき：下の画像タグを囲っている左右の記号を外し、src のファイル名を images/ に入れた写真名に変えてください（例 images/bukken1.jpg） -->
+            <!-- <img src="images/bukken1.jpg" alt="物件写真"> -->
+            <span class="noimg">COMING SOON</span>
+          </div>
+          <div class="prop-body">
+            <h3 class="prop-name">岡山市北区平野　中古戸建</h3>
+            <p class="prop-price"><span class="num">1,280</span>万円</p>
+            <ul class="prop-specs">
+              <li><span class="k">間取り</span><span class="v">4LDK</span></li>
+              <li><span class="k">土地面積</span><span class="v">120.50㎡（約36坪）</span></li>
+              <li><span class="k">建物面積</span><span class="v">98.00㎡</span></li>
+              <li><span class="k">築年数</span><span class="v">2005年築</span></li>
+              <li><span class="k">最寄駅</span><span class="v">JR庭瀬駅 徒歩12分</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--accent">この物件を問い合わせる</a>
+          </div>
+        </article>
+
+        <article class="prop-card">
+          <div class="prop-photo">
+            <span class="prop-label">売土地</span>
+            <!-- <img src="images/bukken2.jpg" alt="物件写真"> -->
+            <span class="noimg">COMING SOON</span>
+          </div>
+          <div class="prop-body">
+            <h3 class="prop-name">倉敷市中庄　売土地</h3>
+            <p class="prop-price"><span class="num">880</span>万円</p>
+            <ul class="prop-specs">
+              <li><span class="k">土地面積</span><span class="v">165.00㎡（約50坪）</span></li>
+              <li><span class="k">用途地域</span><span class="v">第一種住居地域</span></li>
+              <li><span class="k">接道</span><span class="v">南側 幅員6m 公道</span></li>
+              <li><span class="k">最寄駅</span><span class="v">JR中庄駅 徒歩15分</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--accent">この物件を問い合わせる</a>
+          </div>
+        </article>
+
+        <article class="prop-card">
+          <div class="prop-photo">
+            <span class="prop-label">中古マンション</span>
+            <!-- <img src="images/bukken3.jpg" alt="物件写真"> -->
+            <span class="noimg">COMING SOON</span>
+          </div>
+          <div class="prop-body">
+            <h3 class="prop-name">岡山市南区　中古マンション</h3>
+            <p class="prop-price"><span class="num">1,980</span>万円</p>
+            <ul class="prop-specs">
+              <li><span class="k">間取り</span><span class="v">3LDK</span></li>
+              <li><span class="k">専有面積</span><span class="v">72.40㎡</span></li>
+              <li><span class="k">所在階</span><span class="v">5階／10階建</span></li>
+              <li><span class="k">築年数</span><span class="v">2012年築</span></li>
+              <li><span class="k">最寄駅</span><span class="v">バス停 徒歩3分</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--accent">この物件を問い合わせる</a>
+          </div>
+        </article>
+
+      </div>
+      <!-- ここまで（売り物件）-->
+
+      <p class="prop-note">
+        ※ 掲載以外にも、未公開の物件情報がございます。「こんな物件を探している」というご希望もお気軽にご相談ください。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 賃貸物件 ============ -->
+  <section class="section section--sky" id="rent">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">FOR RENT</span>
+        <h2>賃貸物件</h2>
+        <p>アパート・マンション・戸建の賃貸物件をご紹介します。<br>お引越しの時期やご予算など、ご希望をお聞かせください。</p>
+      </div>
+
+      <!-- 売り／賃貸の切り替えリンク -->
+      <div class="prop-tabs">
+        <a href="#sale">売り物件</a>
+        <a href="#rent" class="is-active">賃貸物件</a>
+      </div>
+
+      <!-- ここから編集（1件＝1つの article.prop-card）-->
+      <div class="prop-grid">
+
+        <article class="prop-card">
+          <div class="prop-photo">
+            <span class="prop-label is-rent">賃貸アパート</span>
+            <!-- <img src="images/chintai1.jpg" alt="物件写真"> -->
+            <span class="noimg">COMING SOON</span>
+          </div>
+          <div class="prop-body">
+            <h3 class="prop-name">岡山市北区　賃貸アパート</h3>
+            <p class="prop-price"><span class="num">6.2</span>万円<span class="rent-mo"> /月</span></p>
+            <ul class="prop-specs">
+              <li><span class="k">間取り</span><span class="v">1LDK</span></li>
+              <li><span class="k">専有面積</span><span class="v">42.00㎡</span></li>
+              <li><span class="k">築年数</span><span class="v">2018年築</span></li>
+              <li><span class="k">初期費用</span><span class="v">敷1／礼1</span></li>
+              <li><span class="k">最寄駅</span><span class="v">JR庭瀬駅 徒歩8分</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--accent">この物件を問い合わせる</a>
+          </div>
+        </article>
+
+        <article class="prop-card">
+          <div class="prop-photo">
+            <span class="prop-label is-rent">賃貸戸建</span>
+            <!-- <img src="images/chintai2.jpg" alt="物件写真"> -->
+            <span class="noimg">COMING SOON</span>
+          </div>
+          <div class="prop-body">
+            <h3 class="prop-name">倉敷市　賃貸戸建</h3>
+            <p class="prop-price"><span class="num">9.8</span>万円<span class="rent-mo"> /月</span></p>
+            <ul class="prop-specs">
+              <li><span class="k">間取り</span><span class="v">3LDK</span></li>
+              <li><span class="k">建物面積</span><span class="v">96.00㎡</span></li>
+              <li><span class="k">駐車場</span><span class="v">2台可</span></li>
+              <li><span class="k">初期費用</span><span class="v">敷1／礼1</span></li>
+              <li><span class="k">最寄駅</span><span class="v">JR倉敷駅 車8分</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--accent">この物件を問い合わせる</a>
+          </div>
+        </article>
+
+        <article class="prop-card">
+          <div class="prop-photo">
+            <span class="prop-label is-rent">賃貸マンション</span>
+            <!-- <img src="images/chintai3.jpg" alt="物件写真"> -->
+            <span class="noimg">COMING SOON</span>
+          </div>
+          <div class="prop-body">
+            <h3 class="prop-name">総社市　賃貸マンション</h3>
+            <p class="prop-price"><span class="num">7.5</span>万円<span class="rent-mo"> /月</span></p>
+            <ul class="prop-specs">
+              <li><span class="k">間取り</span><span class="v">2LDK</span></li>
+              <li><span class="k">専有面積</span><span class="v">58.00㎡</span></li>
+              <li><span class="k">所在階</span><span class="v">3階／6階建</span></li>
+              <li><span class="k">初期費用</span><span class="v">敷1／礼0</span></li>
+              <li><span class="k">最寄駅</span><span class="v">JR総社駅 徒歩10分</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--accent">この物件を問い合わせる</a>
+          </div>
+        </article>
+
+      </div>
+      <!-- ここまで（賃貸物件）-->
+
+      <p class="prop-note">
+        ※ 掲載物件は一例です。ご希望のエリア・ご予算に合わせて、最適な物件をお探しします。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CTA（問い合わせ誘導）============ -->
+  <section class="section cta">
+    <div class="container">
+      <h2>気になる物件があれば、お気軽にどうぞ</h2>
+      <p>「まだ探し始めたばかり」でも大丈夫です。ご予算やご希望をお聞かせください。</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn--white btn--lg">フォームで相談する</a>
+        <a href="tel:086-250-5440" class="btn btn--outline btn--lg" style="color:#fff;border-color:#fff;background:transparent;">☎ 電話で相談する</a>
+      </div>
+      <p class="cta-tel">お電話：<strong>086-250-5440</strong>（受付 9:00〜20:00／日祝除く）</p>
+    </div>
+  </section>
+
+  <!-- ============ フッター（全ページ共通）============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/logo-transparent.png" alt="フォースター不動産">
+          <p>安心・安全に託される仕事を目指して。<br>岡山の不動産のことなら、フォースター不動産へ。</p>
+        </div>
+        <div class="footer-col">
+          <h4>メニュー</h4>
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="properties.html">物件情報</a></li>
+            <li><a href="index.html#service">事業内容</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>お問い合わせ</h4>
+          <p>〒701-0151<br>岡山県岡山市北区平野788番地21</p>
+          <p>TEL：086-250-5440<br>FAX：086-250-5445</p>
+          <p>Email：fourstar.0303@gmail.com</p>
+          <p>営業時間：9:00〜20:00（日祝休）</p>
+        </div>
+      </div>
+      <div class="footer-license">
+        <span>宅地建物取引業免許：岡山県知事免許（1）第6192号</span>
+        <span><a href="privacy.html">プライバシーポリシー</a></span>
+        <span>&copy; フォースター不動産 FOURSTAR REAL ESTATE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- スマホ用 画面下に固定される相談ボタン（スマホ表示のときだけ出ます）-->
+  <div class="mobile-cta">
+    <a class="call" href="tel:086-250-5440">☎ 電話で相談</a>
+    <a class="form" href="contact.html">無料相談フォーム</a>
+  </div>
+
+  <!-- 画面右下に常時浮く「無料相談」ボタン（スクロールしても固定で出ます）-->
+  <a class="float-cta" href="contact.html"><span class="ico">✉</span>無料相談</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# ★公開ドメインが決まったら、下の REPLACE_DOMAIN を本番URLに置き換えてください
+Sitemap: https://REPLACE_DOMAIN/sitemap.xml

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- =========================================================================
+     フォースター不動産 お問い合わせページ（contact.html）
+     -------------------------------------------------------------------------
+     ★このフォームを実際に使えるようにするには「Formspree（フォームスプリー）」の
+       登録が必要です。手順は レクチャー資料/04_問い合わせフォームの設定.md を
+       見てください。登録後、下の <form ...> の action="..." を
+       自分のURLに書き換えるだけで、送信内容がメールで届くようになります。
+     ========================================================================= -->
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ｜フォースター不動産</title>
+  <meta name="description" content="フォースター不動産へのお問い合わせ・無料相談はこちら。フォーム・お電話・メールで承ります。">
+  <!-- ★公開ドメインが決まったら「REPLACE_DOMAIN」を本番URLに一括置換してください -->
+  <link rel="canonical" href="https://REPLACE_DOMAIN/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="フォースター不動産">
+  <meta property="og:title" content="お問い合わせ｜フォースター不動産">
+  <meta property="og:description" content="フォースター不動産へのお問い合わせ・無料相談はこちら。フォーム・お電話・メールで承ります。">
+  <meta property="og:url" content="https://REPLACE_DOMAIN/contact.html">
+  <meta property="og:image" content="https://REPLACE_DOMAIN/images/hero.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ ヘッダー（全ページ共通）============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="フォースター不動産"></a>
+      <nav class="nav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="properties.html">物件情報</a></li>
+          <li><a href="index.html#service">事業内容</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="header-tel">
+          <span class="cap">お電話でのご相談</span>
+          <span class="num">☎ 086-250-5440</span>
+        </div>
+        <a href="contact.html" class="btn btn--primary">無料相談</a>
+        <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ ページ見出し ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="en">CONTACT</span>
+      <h1>お問い合わせ</h1>
+    </div>
+  </section>
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> ＞ お問い合わせ</p>
+  </div>
+
+  <!-- ============ 本文 ============ -->
+  <section class="section">
+    <div class="container">
+      <p style="text-align:center;color:var(--muted);max-width:680px;margin:0 auto 44px;">
+        不動産の売買・賃貸管理・資産活用のご相談から、空き家やお金のお悩みまで、どんなことでもお気軽にご相談ください。<br>
+        ご相談・査定は無料です。フォームでのお問い合わせには、担当者より2営業日以内にご連絡します。
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- ---- 左：入力フォーム ---- -->
+        <div>
+          <!-- ★ action の "https://formspree.io/f/xxxxxxxx" を
+                自分のFormspreeのURLに書き換えてください（設定手順は資料04）。 -->
+          <form class="form" action="https://formspree.io/f/xxxxxxxx" method="POST">
+
+            <div class="field">
+              <label>お名前 <span class="req">必須</span></label>
+              <input type="text" name="お名前" required placeholder="例）岡山 太郎">
+            </div>
+
+            <div class="field">
+              <label>フリガナ</label>
+              <input type="text" name="フリガナ" placeholder="例）オカヤマ タロウ">
+            </div>
+
+            <div class="field">
+              <label>メールアドレス <span class="req">必須</span></label>
+              <input type="email" name="メールアドレス" required placeholder="例）taro@example.com">
+            </div>
+
+            <div class="field">
+              <label>電話番号</label>
+              <input type="tel" name="電話番号" placeholder="例）090-0000-0000">
+            </div>
+
+            <div class="field">
+              <label>ご相談の種類</label>
+              <select name="ご相談の種類">
+                <option value="">選択してください</option>
+                <option>不動産の売却について</option>
+                <option>不動産の買取について</option>
+                <option>賃貸物件について</option>
+                <option>リフォーム・解体について</option>
+                <option>お片付け・不用品処分について</option>
+                <option>その他</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>お問い合わせ内容 <span class="req">必須</span></label>
+              <textarea name="お問い合わせ内容" required placeholder="ご相談内容をご記入ください。物件の所在地などが分かればスムーズです。"></textarea>
+            </div>
+
+            <label class="privacy">
+              <input type="checkbox" required>
+              <span>個人情報の取り扱いに同意のうえ送信します。いただいた情報はお問い合わせ対応の目的にのみ使用します。</span>
+            </label>
+
+            <!-- 送信後に表示するページ（今はこのページに戻ります。必要なら変更可）-->
+            <input type="hidden" name="_language" value="ja">
+
+            <div class="submit">
+              <button type="submit" class="btn btn--primary btn--lg">この内容で送信する</button>
+              <p class="note">※送信ボタンが動かない場合は、お電話・メールでお問い合わせください。</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- ---- 右：電話・メール等 ---- -->
+        <aside class="contact-side">
+          <h3>お電話・メールでも承ります</h3>
+          <div class="row">
+            <span class="lbl">電話</span>
+            <span class="val"><a href="tel:086-250-5440" class="tel-big">086-250-5440</a></span>
+          </div>
+          <div class="row">
+            <span class="lbl">受付</span>
+            <span class="val">9:00〜20:00（日祝休）</span>
+          </div>
+          <div class="row">
+            <span class="lbl">FAX</span>
+            <span class="val">086-250-5445</span>
+          </div>
+          <div class="row">
+            <span class="lbl">メール</span>
+            <span class="val">fourstar.0303@gmail.com</span>
+          </div>
+          <div class="row">
+            <span class="lbl">所在地</span>
+            <span class="val">〒701-0151<br>岡山県岡山市北区平野788番地21</span>
+          </div>
+          <p style="margin:18px 0 0;font-size:13px;color:var(--muted);">
+            「まだ売るか迷っている」段階のご相談も歓迎です。無理な営業はいたしません。
+          </p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ フッター（全ページ共通）============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/logo-transparent.png" alt="フォースター不動産">
+          <p>安心・安全に託される仕事を目指して。<br>岡山の不動産のことなら、フォースター不動産へ。</p>
+        </div>
+        <div class="footer-col">
+          <h4>メニュー</h4>
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="properties.html">物件情報</a></li>
+            <li><a href="index.html#service">事業内容</a></li>
+            <li><a href="index.html#reason">選ばれる理由</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>お問い合わせ</h4>
+          <p>〒701-0151<br>岡山県岡山市北区平野788番地21</p>
+          <p>TEL：086-250-5440<br>FAX：086-250-5445</p>
+          <p>Email：fourstar.0303@gmail.com</p>
+          <p>営業時間：9:00〜20:00（日祝休）</p>
+        </div>
+      </div>
+      <div class="footer-license">
+        <span>宅地建物取引業免許：岡山県知事免許（1）第6192号</span>
+        <span><a href="privacy.html">プライバシーポリシー</a></span>
+        <span>&copy; フォースター不動産 FOURSTAR REAL ESTATE</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
