@@ -598,10 +598,13 @@ a:hover { text-decoration: underline; }
   .flow .step:nth-child(2)::after { display: none; }
 }
 @media (max-width: 640px) {
-  .stats .num { font-size: 28px; }
-  .stats .cols { grid-template-columns: 1fr; }
-  .stats .cell { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
-  .stats .cell:last-child { border-bottom: 0; }
+  /* スマホでも3つを横並びのまま・文字を小さく */
+  .stats .cols { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .stats .cell { padding: 20px 6px; border-right: 1px solid rgba(255,255,255,.12); border-bottom: 0; }
+  .stats .cell:last-child { border-right: 0; }
+  .stats .num { font-size: 20px; }
+  .stats .num .u { font-size: 12px; }
+  .stats .lbl { font-size: 10px; margin-top: 5px; }
   .flow { grid-template-columns: 1fr; gap: 30px; }
   .flow .step::after {
     content: "⌄"; right: auto; left: 50%; top: auto; bottom: -24px; transform: translateX(-50%);
@@ -715,3 +718,13 @@ a:hover { text-decoration: underline; }
   .concept-copy { font-size: 24px; }
   .concept-text { font-size: 15px; }
 }
+
+/* =========================================================================
+   日本語の改行をキリのいい位置で折り返す
+   -------------------------------------------------------------------------
+   .kw を付けた文章は、文中に入れた <wbr>（＝折り返してよい位置）だけで
+   改行します。画面幅に応じて、文節の切れ目で自然に折り返されるので
+   「ご紹介し／ています」のような途中での不自然な改行が起きません。
+   ※ <wbr> が無い長い語は、はみ出さないよう最終手段として途中で折り返します。
+   ========================================================================= */
+.kw { word-break: keep-all; overflow-wrap: anywhere; }
